@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Sisai Park Village</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Login CSS -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-logo text-center mb-4">
+                 <i class="fas fa-tree logo-icon"></i>
+                <div class="logo-text">
+                    Sisai<span>Park</span> Admin
+                </div>
+            </div>
+            <h3 class="text-center mb-4">Admin Login</h3>
+            <form id="loginForm">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <label for="password"><i class="fas fa-lock"></i> Password</label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="#" class="text-decoration-none">Forgot Password?</a>
+                </div>
+                 <div class="text-center mt-4">
+                    <a href="home.html" class="text-decoration-none">← Back to Main Site</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Basic Login JS (for redirection simulation) -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual form submission
+            // In a real app, you'd send credentials to a backend here
+            // For simulation, just redirect to dashboard
+            window.location.href = 'dashboard.html'; 
+        });
+    </script>
+</body>
+</html> 
